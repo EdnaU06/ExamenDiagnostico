@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>Llamada </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let registro of registros" (click)="goToDetalle(registro)">
+      <ion-avatar item-start>
+        <img src="{{registro.img}}">
+        </ion-avatar>
+      <p>{{registro.nombre}}</p>
+      <p>{{registro.titulo}}</p>
+    </ion-item>
+  </ion-list>
+  
+</ion-content>
